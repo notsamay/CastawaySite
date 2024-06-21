@@ -1,0 +1,80 @@
+
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-image: url('/public/map.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  
+  .background-image p {
+    font-family: 'Merriweather';
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 48.75%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(105, 87, 64);
+    padding: 1vw;
+    background-color: wheat;
+  }
+  
+  .custom-button {
+    transition: 1s;
+    z-index: 2;
+    position: absolute;
+    top: 80%;
+    left: 48.75%;
+    transform: translate(-50%, -50%);
+    background-image: url('/public/button.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 6vw;
+    height: 6vh;
+    border: 2px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    width: 6.5vw;
+    height: 6.5vh;
+  }
+  
+  .custom-button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  .holder {
+    width: 80%;
+    text-align: center;
+  }
+  
+  
+  
+  .fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  
+  .fade-out {
+    animation: fadeOut 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  

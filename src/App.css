@@ -1,0 +1,126 @@
+/* General styles */
+body {
+  font-family: 'Merriweather', 'Old Standard TT';
+  background-color: #202020;
+  color: #000000ba;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  background-image: url('/public/background.jpg');
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+p {
+  line-height: 2.5vh;
+  text-align: left;
+
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  padding-bottom: 5vh;
+  border-bottom: 2px solid black;
+
+}
+
+.App {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vw 0;
+  opacity: 1;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.MiddleText {
+  width: 40vw;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 4vw;
+  box-sizing: border-box;
+}
+
+.MiddleText .highlight {
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: block;
+  width: 100%;
+}
+
+.Main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Panels {
+  width: 15vw;
+  margin: 0 2.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.Middle {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 2vw;
+  text-transform: capitalize;
+}
+h4 {
+  font-size: 1.15vw;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  text-align: left;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+
+}
+
+.SignUp {
+  width: 40vw;
+  height: 60vh;
+  border: 2px solid black;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+.first-letter{
+  font-size: 115%;
+  text-align: left;
+  text-indent: 3vw;
+
+}
+.first-letter::first-letter{
+font-size: 1.5em;
+padding: 0.1vw;
+font-weight: bold;
+opacity: 0.9;
+
+}
+
