@@ -1,187 +1,359 @@
 /* General styles */
 body {
-  font-family: 'Merriweather', 'Old Standard TT';
-  background-color: #202020;
-  color: #000000ba;
+  font-family: 'Old Standard TT', "Times New Roman";
+  background-color: rgba(32, 32, 32, 0.63); /* Adjusted for readability */
+  color: rgba(0, 0, 0, 0.71); /* Adjusted for readability */
   margin: 0;
   padding: 0;
   position: relative;
   overflow-x: hidden;
   background-image: url('/public/background.jpg');
   background-size: cover;
+  background-repeat: repeat;
   text-align: center;
-  background-repeat: no-repeat;
   box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+  height: 300vh;
 }
 
-p {
-  line-height: 2.5vh;
-  text-align: left;
-
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
-  padding-bottom: 5vh;
-  border-bottom: 2px solid black;
+.Flex-Left hr{
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.71);
+  margin: 1em 0;
+  padding: 0;
+  margin: -1vw;
+}
+hr{
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.71);
+  margin-top: 5vh ;
+  padding: 0;
 
 }
 
 .App {
-
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 10vw 0;
-  opacity: 1;
   width: 100vw;
+  height: 300vh;
   box-sizing: border-box;
+  background-color: rgba(224, 220, 183, 0.192); /* Semi-transparent background */
+  opacity: 1; /* Opacity set here but can be adjusted if needed */
 }
 
-.MiddleText {
-  width: 40vw;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 4vw;
-  box-sizing: border-box;
-}
-.MiddleText2 {
-  width: 40vw;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 3vw;
-  box-sizing: border-box;
-  letter-spacing: 1vw;
 
+.Frame {
+  width: 80vw;
+
+
+  border-radius: 8px; /* Added border-radius for a rounded outline */
+  
 }
 
-.MiddleText .highlight {
-  font-size: 1.2em;
+.Header {
+  width: 80vw;
+  
+}
+
+p{
+  line-height: 150%;
+  font-size: 0.9vw;
+  text-align: left;
+  margin-top: 3vh;
+}
+.Main h1 {
   font-weight: bold;
-  letter-spacing: 2px;
-  display: block;
-  width: 100%;
-}
-.highlight {
-
-  font-weight: bold;
-  letter-spacing: 5px;
-  display: block;
-  width: 100%;
+  font-size: 8vw;
+  letter-spacing: 0.75vw;
+  margin-top: 2vh;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.75); /* Adjust color for readability */
 }
 
-.Main {
+.Main-Flexbox {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
 }
 
-.Panels {
-  width: 15vw;
-  margin: 0 2.5vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  text-align: center;
-  box-sizing: border-box;
+.Flex-Left {
+  margin-left: 1.5vw;
 }
 
-.Middle {
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  text-align: center;
-  box-sizing: border-box;
+.Flex-Left img {
+  min-width: 50vw;
+  min-height: 25vw;
+  outline: 2px solid black;
+  border-radius: 4px; /* Added border-radius for a softer image edge */
 }
 
-h3 {
-  font-size: 2vw;
-  text-transform: capitalize;
-}
-h4 {
-  font-size: 1.15vw;
-  text-transform: capitalize;
-  margin-bottom: 0;
-  text-align: left;
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
-
-}
-h2{
-  padding-bottom: 5vh;
-}
-
-.SignUp {
-  width: 40vw;
-  height: 60vh;
-  border: 2px solid black;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
+.Flex-Right {
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
   justify-content: center;
-}
-.SignUp2 {
-  width: 15vw;
-  height: 32.5vh;
-  border: 2px solid black;
-  box-sizing: border-box;
-  display: flex;
   align-items: center;
-  justify-content: center;
-}
-.SignUp3 {
-  width: 12vw;
-  height: 10VW;
-  border: 2px solid black;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.signup-cont{
-  display: flex;
   
 }
-.signup-cont p{
-width: 20vw;
-margin-right: 2vw;
-  
+
+.Box {
+  padding-top: 2.5vh;
+  padding-bottom: 2vh;
+  background-color: rgba(0, 0, 0, 0.82); /* Semi-transparent background for the Box */
+  width: 25.5vw;
+  height: 16.25vh;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: multiply; /* Allows cutout text effect */
+  border-radius: 3px;
+  color: #fff; /* Simplified color declaration */
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added box-shadow for better visibility */
 }
-img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  box-sizing: border-box;
+.Box2 {
+  padding-top: 2vh;
+  border: 3px solid rgba(0, 0, 0, 0.71);
+  border-radius: 5px;
+  width: 25.5vw;
+  height: 65vh;
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added box-shadow for better visibility */
 }
-.first-letter{
-  font-size: 115%;
-  text-align: left;
+.Box:hover {
+  scale: 1.05;
+
+}
+
+.cutout {
+  display: inline-block;
+}
+
+.part1 {
+  font-size: 2em;
+}
+
+.part2 {
+  white-space: nowrap; /* Prevent line break */
+  display: inline-block;
+}
+
+.DTxt1 {
+ font-size: 2.75em;
+ white-space: nowrap; /* Prevent line break */
+ 
+}
+
+.DTxt2{
+  white-space: nowrap; /* Prevent line break */
+  display: inline-block;
+
+}
 
 
-}
-.first-letter::first-letter{
-  color:#000000a9;
+.MainText::first-letter {
+
   font-weight: bold;
-  font-size: 50px;
+  font-size: 70px;
   float: left;
-  line-height: 45px;
+  line-height: 50px;
   padding-right: 8px;
   margin-top: -3px;
-
-}
-
-.small-title{
-  font-size: 550%;
-
-  text-align: center;
-  margin-bottom: 10%;
-
-
 }
 .FAQ{
-  letter-spacing: 1vw;
-  margin-left: 1vw;
-  margin-right: 0.5vw;
+  text-align: left;
+  font-size: 2.5vw;
+
+  
 }
+.title{
+  font-weight: bold;
+  color: rgb(28, 28, 28);
+  font-size: 1.1rem;
+  font: "'Old Standard TT'";
+}
+
+.FAQ-Flexbox{
+  margin-top: 2vh;
+  display: flex;
+  gap: 3vw;
+}
+.FAQ-Middle {
+
+  width: 11.5vw;
+}
+.FAQ-Left {
+
+  width: 11.5vw;
+}
+.FAQ-Right {
+
+  width: 11.5vw;
+}
+.Flex-Right p {
+  margin-right:1.5vw ;
+  margin-left:1.5vw ;
+}
+.SignUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh; /* Adjust as needed for spacing */
+  border: thick, double;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added box-shadow for better visibility */
+}
+
+
+
+@keyframes scaleBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.Sign-Up-Button {
+  margin-top: 3vh; /* Adjust as needed for spacing */
+  padding: 1vh 1vh; /* Adjust padding for the button size */
+  margin-bottom: 3vh;
+  border: thick dashed white; /* Button border */
+  cursor: pointer; /* Pointer cursor on hover */
+  animation: scaleBounce 1s ease-in-out 2.4s infinite; /* Quick bounce with delay */
+  animation-delay: 2.4s; /* Delay before starting the first bounce */
+  transition: 0.3s; /* Smooth background color transition */
+  background-color: rgba(0, 0, 0, 0.82);
+  mix-blend-mode: multiply
+}
+
+
+
+
+.Sign-Up-Button:hover {
+ scale: 1.05;
+ animation: none;
+}
+
+.Sign-Up-Button h3 {
+  margin: 0;
+  font-size: 4em; /* Adjust font size as needed */
+  font-family: "Playfair Display";
+  font-weight: 700;
+  color: #fff;
+  
+}
+/* Media query to turn off flexbox when the screen width is less than or equal to the height */
+
+@media (max-aspect-ratio: 1/1) {
+
+  .Frame {
+    width: 95vw;
+
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  
+  
+    
+  }
+  .Main-Flexbox {
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   margin-left: 0;
+   margin-right: 0;
+
+  }
+  
+  .Flex-Left,
+  .Flex-Right {
+    width: 95vw; /* Adjusted for responsiveness */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .FAQ-Flexbox {
+   flex-direction: row;
+    width: 95vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .FAQ-Left,
+  .FAQ-Middle,
+  .FAQ-Right {
+    width: 100%; /* Ensure each FAQ item takes up the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 1vw; /* Add some padding around each FAQ item */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .Box,
+  .Box2 {
+    width: 95vw; /* Adjusted for responsiveness */
+    max-width: 95vw;
+    height: auto; /* Let height adjust based on content */
+    margin: 0 auto; /* Center align boxes */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+    margin-left: 0;
+    margin-right: 0;
+    margin: 10vh auto 0; /* Add 10vh top margin, auto for horizontal centering */
+  }
+  
+  .SignUp {
+    width: 95vw; /* Ensure SignUp section fits the width */
+    margin: 5vh auto; /* Center align SignUp section and add vertical spacing */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .Header{
+
+    width: 100vw;
+
+    margin-right: 2.5vw;
+  }
+
+  p{
+    font-size: 2.5vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .Flex-Left img {
+  min-width: 90vw;
+  min-height: 35vh;
+  margin-left: 0;
+  margin-right: 0;
+
+  }
+  .Main h1{
+    font-size: 9.7vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .FAQ {
+    margin: 10vh auto 0; /* Add 10vh top margin, auto for horizontal centering */
+    font-size: 5vw;
+    text-align: center;
+        margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
