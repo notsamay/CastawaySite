@@ -7,7 +7,7 @@ body {
   padding: 0;
   position: relative;
   overflow-x: hidden;
-  background-image: url('/public/background.jpg');
+  background-image: url('/background.jpg');
   background-size: cover;
   background-repeat: repeat;
   text-align: center;

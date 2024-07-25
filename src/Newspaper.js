@@ -14,7 +14,7 @@ function Paper() {
         <h1>PIRATE ATTACK!</h1>
         <div className='Main-Flexbox'>
           <div className='Flex-Left'>
-            <img src="Map.png" alt="MapIMG"/>
+            <img src="map.jpg" alt="MapIMG" width="500" height="600"/>
             <p className='MainText'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie. Metus vulputate eu scelerisque felis imperdiet proin. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. In massa tempor nec feugiat nisl pretium fusce id. Diam in arcu cursus euismod quis viverra nibh cras. Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Enim facilisis gravida neque convallis. Id semper risus in hendrerit gravida rutrum quisque non tellus. Diam quam nulla porttitor massa id neque. Egestas sed tempus urna et pharetra. Accumsan lacus vel facilisis volutpat. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Nunc sed id semper risus in hendrerit gravida. Tempus quam pellentesque nec nam aliquam sem. Habitasse platea dictumst quisque sagittis purus sit. Elementum sagittis vitae et leo duis. Nisi est sit amet facilisis. Enim eu turpis egestas pretium. Lacus vestibulum sed arcu non odio euismod lacinia at. Dignissim enim sit amet venenatis urna cursus. Erat imperdiet sed euismod nisi porta lorem. Bibendum ut tristique et egestas quis ipsum. Et egestas quis ipsum suspendisse ultrices gravida dictum. Urna nunc id cursus metus aliquam eleifend mi in nulla. Tellus mauris a diam maecenas sed enim ut. Ullamcorper sit amet risus nullam eget felis eget.
             </p>
